@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #bbc6fa;
+}
+.main-container {
+    margin: auto;
+    padding: 30px;
+    max-width: 700px;
+    width: 90%;
+    min-height: 300px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.main-container > h1 {
+    position: relative;
+}
+.sub-container {
+    margin: 35px 0;
+    display: grid;
+    gap: 10px;
+}
+#quote {
+    font-size: 18px;
+}
+.sub-container p {
+    justify-self: end;
+    font-weight: 600;
+    /* align-self: flex-end; */
+}
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    row-gap: 20px;
+    position: relative;
+}
+button {
+    height: 40px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: rgb(23, 124, 229);
+    color: white;
+    font-weight: 600;
+}
+#tweet, #WhatsApp {
+    background-color: transparent;
+    border: 2px solid rgb(23, 124, 229);
+    color: rgb(23, 124, 229);
+}
+#tweet i {
+    margin-right: 10px;
+}
+.copy {
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+}
+footer {
+    position: absolute;
+    bottom: 15px;
+    background-color: white;
+    border: 3px solid white;
+    padding: 7px 15px 7px 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: .4s ease-in-out all;
+    margin-top: 20px;
+}
+footer:hover {
+    cursor: pointer;
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    transform: scale(1.1);
+}
+a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+#twitter {
+    width: 18px;
+    height: 20px;
+}
+.whatsapp, .github {
+    font-size: 20px;
+}
+@media (max-width: 650px) {
+    .sub-container p {
+        justify-self: normal;
+    }
+    .copy {
+        cursor: pointer;
+        font-size: 27px;
+        position: relative;
+    }
+}
+@media (max-width: 515px) {
+    #btn {
+        flex-direction: column;
+    }
+}
